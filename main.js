@@ -1,6 +1,5 @@
 
-let input = document.querySelector('input'),
-btn = document.querySelector('button'),
+let btn = document.querySelector('button'),
 video = document.querySelector('video'),
 circle = document.querySelector('.circle'),
 txt = document.querySelector('h2'),
@@ -11,19 +10,14 @@ countdownDisplay = document.getElementById('countdown'),
 click = document.getElementById('click'),
 figure = document.querySelector('figure');
 
-var count = 4;
+var count = 3;
 var countdownInterval;
-
+ 
 btn.addEventListener('click', () => {
-  if(input.value === '') {
-    alert('name is required')
-  } else {
-    form.style.display = 'none'
-    alert('I have a big surprise for you!  😁')
-  figure.style.display = 'block'
-  mp3.play();
-  mp3.loop = 'true'
-  }
+    btn.style.display = 'none'
+    figure.style.display = 'block'
+    mp3.play();
+    mp3.loop = 'true'
 })
 click.addEventListener('click', () => {
   click.style.animation = 'none'
