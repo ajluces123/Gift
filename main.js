@@ -11,7 +11,7 @@ countdownDisplay = document.getElementById('countdown'),
 click = document.getElementById('click'),
 figure = document.querySelector('figure');
 
-var count = 5;
+var count = 4;
 var countdownInterval;
 
 btn.addEventListener('click', () => {
@@ -31,6 +31,8 @@ click.addEventListener('click', () => {
   countdownInterval = setInterval(function() {
     countdownDisplay.innerHTML = 'Opening in ' + count;
     count--;
+    video.play();
+
 
       if (count < 0) {
         clearInterval(countdownInterval);
@@ -50,7 +52,5 @@ click.addEventListener('click', () => {
     txt.innerHTML = ''
     txt.style.color = '#ADADAD'
     txt.style.transform = 'scale(1.4)'
-    video.play();
     mp3.pause();
-    video.currentTime = 3;
   }
