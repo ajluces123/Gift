@@ -1,0 +1,89 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300');
+  * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', cursive;
+
+  }
+  body {
+    background-color: #FFFFFF;
+    transition: .5s;
+  }
+    figure {
+      background-color: #FF6969;
+      height: 350px;
+      width:300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #79797996;
+      position: absolute;;
+      left: 0;
+      animation: pop .3s ease-in;
+      display:none;
+      right:0;
+      text-align: center;
+      margin:5rem auto;
+    }
+    @keyframes pop {
+      0% {transform: scale(0.6);}
+      100% {transform: scale(1.1);}
+    }
+    
+video::-webkit-media-controls {
+  display: none;
+}
+
+    #form {
+      padding: 1rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 5rem auto;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      width:clamp(350px,300px,300px);
+    }
+  #click {
+  animation: pop 1s infinite;
+}
+.circle {
+  position: absolute;
+  background: #FFFFFF;
+  margin-top: -3rem;
+  height :180px;
+  width: 180px;
+  border-radius: 50%;
+}
+#mp3 {
+  display: none;
+}
+@keyframes pop {
+  0% {transform: scale(0.9);}
+  100% {transform: scale(1.1);}
+}
+h2 {
+  font-size: 13pt;
+  color:#FFFFFF;
+}
+    input {
+      width: 100%;
+      color: #FF6969;
+      outline: none;
+      border: 1px solid #FF6969;
+      padding:7px;
+    }
+    button {
+      background-color: #FF6969;
+      color: #FFFFFF;
+      border: 1px solid #FF6969;
+      padding:7px;
+    }
+    article {
+      display: grid;
+      height: 100%;
+      place-items: center;
+    }
+    video {
+      display:none;
+    }
