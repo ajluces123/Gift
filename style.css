@@ -33,7 +33,7 @@ video::-webkit-media-controls {
 }
 video {
     position: absolute;
-    width: 1000px;
+    width: 100%;
 } 
    
   #click {
