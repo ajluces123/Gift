@@ -10,7 +10,7 @@ countdownDisplay = document.getElementById('countdown'),
 click = document.getElementById('click'),
 figure = document.querySelector('figure');
 
-var count = 3;
+var count = 4;
 var countdownInterval;
  
 btn.addEventListener('click', () => {
