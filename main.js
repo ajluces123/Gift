@@ -19,7 +19,6 @@ btn.addEventListener('click', () => {
     alert('name is required')
   } else {
     form.style.display = 'none'
-    alert('Hi ' + input.value + '!')
     alert('I have a big surprise for you!  😁')
   figure.style.display = 'block'
   mp3.play();
